@@ -6,14 +6,24 @@ public class Order
 
     public string? Name { get; set; }
 
-    public int UserDataId { get; set; }
+    public User? User { get; set; }
 
-    public int DriverDataId { get; set; }
+    public Driver? Driver { get; set; }
 }
 
-public class OrderData : Order
+public class OrderData
 {
+    public int Id { get; set; }
+
+    public string? Name { get; set; }
+
+    public int UserId { get; set; }
+
+    public int DriverId { get; set; }
+
+    // one or many Orders has one user
     public UserData? User { get; set; }
 
+    // one or many Orders has one driver
     public DriverData? Driver { get; set; }
 }

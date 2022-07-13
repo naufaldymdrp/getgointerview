@@ -10,7 +10,7 @@ public class Score
 
     public DateTime SysCreationDate { get; set; }
 
-    public DriverData? Driver { get; set; }
+    public int DriverId { get; set; }
 }
 
 public class ScoreData

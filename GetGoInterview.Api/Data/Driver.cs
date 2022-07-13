@@ -8,11 +8,11 @@ public class Driver
 
     public Car? Car { get; set; }
 
-    public Order? ActiveOrder { get; set; }
+    public int ActiveOrderId { get; set; }
 
-    public Score? ActiveScore { get; set; }
+    public int ActiveScoreId { get; set; }
 
-    public Location? ActiveLocation { get; set; }
+    public int ActiveLocationId { get; set; }
 }
 
 public class DriverData

@@ -2,10 +2,6 @@ namespace GetGoInterview.Api.Data;
 
 public class Location
 {
-    public int Id { get; set; }
-
-    public bool Status { get; set; }
-
     public int X { get; set; }
 
     public int Y { get; set; }

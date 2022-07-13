@@ -14,6 +14,10 @@ builder.Services.AddDbContext<GetGoInterviewDbContext>(
         options.UseSqlite($"Data Source={directory}/getgointerview.db");
     }
 );
+// Add LocationBusiness service to DI 
+builder.Services.AddScoped<LocationBusiness>();
+// Add UserBussiness to DI
+builder.Services.AddScoped<UserBusiness>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

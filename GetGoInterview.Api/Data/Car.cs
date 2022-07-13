@@ -8,7 +8,7 @@ public class Car
 
     public string? Name { get; set; }
 
-    public Driver? Driver { get; set; }
+    public int DriverId { get; set; }
 }
 
 public class CarData

@@ -6,9 +6,11 @@ public class User
 
     public string? Name { get; init; }
 
-    public List<Order>? Orders { get; set; }
+    public List<int>? OrderIds { get; set; }
 
-    public Location? ActiveLocation { get; set; }
+    public int ActiveOrderId { get; set; }
+
+    public int ActiveLocationId { get; set; }
 }
 
 public class UserData

@@ -11,4 +11,10 @@ public class Booking
         _dbContext = dbContext;
     }
 
+    public void AssignUserLocation(User user)
+    {
+        
+        throw new NotImplementedException();
+    }
+
 }

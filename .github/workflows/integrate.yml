@@ -21,4 +21,4 @@ jobs:
       - name: build all projects using dotnet cake
         run: dotnet cake
       - name: Run dotnet test on test project
-        run: dotnet test --project GetGoInterview.Test/GetGoInterview.Test.csproj
+        run: dotnet test
